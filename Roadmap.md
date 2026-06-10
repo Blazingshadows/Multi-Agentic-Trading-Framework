@@ -1,289 +1,153 @@
-# Agentic Commerce Platform Roadmap
+# Project Roadmap
 
 ---
 
-# Phase 0 — Research & Planning
-Duration: 1 Week
+# Phase 1 — Infrastructure & Backtesting Foundation
 
-## Goals
+Goal:
+Create a reliable trading research environment.
 
-- Finalize architecture
-- Define agent responsibilities
-- Select frameworks
-- Create project structure
+Deliverables:
 
-## Deliverables
+- Historical data pipeline
+- Data cleaning pipeline
+- Indicator generation
+- Portfolio simulator
+- Backtesting engine
+- Performance metrics
 
-- Architecture diagrams
-- Technical specification
-- Milestone planning
-
----
-
-# Phase 1 — Baseline MVP
-Duration: 2 Weeks
-
-## Objective
-
-Build a working single-agent recommendation system.
-
-## Features
-
-- User query input
-- Product retrieval
-- Basic recommendation generation
-- Product ranking
-- Simple UI
-
-## Deliverables
-
-- End-to-end MVP
-- Initial evaluation metrics
+Output:
+A system capable of evaluating trading strategies on historical data.
 
 ---
 
-# Phase 2 — Multi-Agent System
-Duration: 2–3 Weeks
+# Phase 2 — Baseline Strategy Layer
 
-## Objective
+Goal:
+Establish benchmark performance.
 
-Replace monolithic agent with specialized agents.
+Deliverables:
 
-## Features
+- Moving Average crossover strategy
+- RSI strategy
+- Position sizing
+- Evaluation reports
 
-### Research Agent
-
-- Product search
-- Specification extraction
-
-### Review Agent
-
-- Review analysis
-- Sentiment extraction
-
-### Comparison Agent
-
-- Product scoring
-- Feature comparisons
-
-### Orchestrator Agent
-
-- Agent routing
-- Workflow management
-
-## Deliverables
-
-- Functional multi-agent pipeline
+Output:
+First profitable/non-profitable benchmark strategy.
 
 ---
 
-# Phase 3 — RAG Integration
-Duration: 2 Weeks
+# Phase 3 — Machine Learning Research Layer
 
-## Objective
+Goal:
+Generate predictive market signals.
 
-Introduce retrieval-augmented reasoning.
+Deliverables:
 
-## Features
+- LSTM forecasting model
+- Feature engineering pipeline
+- Rolling window training
+- Validation framework
 
-- Vector database
-- Embeddings
-- Document indexing
-- Retrieval pipelines
-
-## Deliverables
-
-- Knowledge-enhanced recommendations
+Output:
+ML-generated market forecasts.
 
 ---
 
-# Phase 4 — Memory System
-Duration: 1–2 Weeks
+# Phase 4 — Reinforcement Learning Layer
 
-## Objective
+Goal:
+Learn trading decisions.
 
-Enable personalization.
+Deliverables:
 
-## Features
+- Custom Gym environment
+- PPO-based agent
+- Reward design framework
+- RL training pipeline
 
-- User profiles
-- Preference memory
-- Recommendation history
-- Session memory
-
-## Deliverables
-
-- Persistent personalization
+Output:
+RL-driven buy/sell/hold decisions.
 
 ---
 
-# Phase 5 — Advanced Evaluation Layer
-Duration: 2 Weeks
+# Phase 5 — Multi-Agent Architecture
 
-## Objective
+Goal:
+Introduce specialized autonomous components.
 
-Improve recommendation quality.
+Deliverables:
 
-## Features
+Researcher Agent
+Validator Agent
+Execution Agent
 
-- Multi-factor scoring
-- Confidence estimation
-- Hallucination detection
-- Evidence validation
-
-## Deliverables
-
-- Explainable recommendations
+Output:
+Coordinated decision workflow.
 
 ---
 
-# Phase 6 — Pricing Intelligence
-Duration: 2 Weeks
+# Phase 6 — Risk Management System
 
-## Objective
+Goal:
+Prevent catastrophic decisions.
 
-Track market conditions.
+Deliverables:
 
-## Features
+- Position limits
+- Stop loss framework
+- Drawdown protection
+- Exposure management
 
-- Price monitoring
-- Historical tracking
-- Discount detection
-- Alert generation
-
-## Deliverables
-
-- Dynamic pricing recommendations
+Output:
+Risk-aware trading behavior.
 
 ---
 
-# Phase 7 — Commerce Intelligence
-Duration: 2–3 Weeks
+# Phase 7 — Live Paper Trading
 
-## Objective
+Goal:
+Validate system in real markets.
 
-Provide deeper market insights.
+Deliverables:
 
-## Features
+- Exchange API integration
+- Real-time data ingestion
+- Paper trading execution
 
-- Trend analysis
-- Brand comparisons
-- Category insights
-- Market reports
-
-## Deliverables
-
-- Commerce analytics dashboard
+Output:
+Live simulation environment.
 
 ---
 
-# Phase 8 — UI/UX Upgrade
-Duration: 2 Weeks
+# Phase 8 — Deployment
 
-## Objective
+Goal:
+24/7 autonomous operation.
 
-Create production-quality experience.
-
-## Features
-
-- Chat interface
-- Recommendation dashboard
-- Product cards
-- Comparison tables
-- Agent reasoning visualization
-
-## Deliverables
-
-- Public demo platform
-
----
-
-# Phase 9 — Deployment
-Duration: 1 Week
-
-## Objective
-
-Deploy platform to cloud infrastructure.
-
-## Features
+Deliverables:
 
 - Dockerization
+- VM deployment
 - Monitoring
-- Logging
-- CI/CD
+- Alerting
 
-## Deliverables
-
-- Live hosted application
+Output:
+Production-ready infrastructure.
 
 ---
 
-# Phase 10 — Autonomous Commerce (Future)
-Duration: Ongoing
+# Phase 9 — Advanced Research
 
-## Features
+Potential Areas:
 
-- Automated purchasing
-- Budget management
-- Subscription optimization
-- Negotiation agents
-- Vendor communication agents
+- Regime detection
+- Portfolio optimization
+- Transformers
+- Ensemble systems
+- Offline RL
+- Multi-market trading
 
-## Outcome
-
-AI-powered personal commerce assistant.
-
----
-
-# Stretch Goals
-
-## Multimodal Search
-
-- Product image search
-- Visual similarity matching
-
-## Video Understanding
-
-- YouTube review analysis
-- Benchmark extraction
-
-## Community Intelligence
-
-- Reddit analysis
-- Forum aggregation
-
-## Real-Time Web Agents
-
-- Dynamic market research
-- Competitor tracking
-
-## Local LLM Support
-
-- Self-hosted reasoning models
-- Reduced inference cost
-
----
-
-# Summer Execution Plan
-
-Month 1:
-- Phase 0
-- Phase 1
-- Phase 2
-
-Month 2:
-- Phase 3
-- Phase 4
-- Phase 5
-
-Month 3:
-- Phase 6
-- Phase 7
-- Phase 8
-
-Final Weeks:
-- Phase 9
-- Demo preparation
-- Resume material
-- Documentation
-- Public release
+Output:
+Performance improvements beyond baseline.
