@@ -1,264 +1,155 @@
-# Agentic Commerce Platform
+# AthenaTrade: Multi-Agent Hybrid AI Trading System
 
 ## Overview
 
-An AI-powered multi-agent commerce platform that helps users discover, evaluate, compare, and purchase products through autonomous research and reasoning.
+AthenaTrade is a research-focused trading platform that combines:
 
-Instead of relying on keyword search and static recommendations, the system behaves like a team of specialized analysts that work together to understand user intent, research products, compare options, and provide personalized recommendations.
+- Quantitative trading infrastructure
+- Machine Learning (LSTM-based forecasting)
+- Reinforcement Learning (decision making)
+- Multi-agent architecture
+- Risk-aware execution
+- Live paper trading deployment
 
-The goal is to create a shopping experience closer to consulting an expert than browsing an e-commerce website.
-
----
-
-## Problem Statement
-
-Modern e-commerce platforms suffer from:
-
-- Information overload
-- Sponsored recommendation bias
-- Poor personalization
-- Time-consuming product research
-- Fragmented review sources
-- Lack of transparent reasoning
-
-Users often spend hours reading reviews, watching videos, comparing specifications, and researching alternatives before making a decision.
-
-This platform automates that process.
+The project is designed as an engineering-first system where infrastructure and evaluation are built before introducing intelligence and autonomy.
 
 ---
 
-## Core Idea
+## Vision
 
-A user provides a goal such as:
+Build a trading system that evolves through three layers:
 
-> "Find me the best laptop for machine learning under ₹1,20,000."
+### Layer 1: Infrastructure
+Reliable data pipelines, backtesting, execution simulation, and evaluation.
 
-The platform launches multiple AI agents that independently gather information, analyze options, validate claims, and build a final recommendation.
+### Layer 2: Intelligence
+Machine learning and reinforcement learning models capable of generating and validating trading decisions.
 
-The user receives:
-
-- Recommended products
-- Alternative options
-- Pros and cons
-- Community sentiment
-- Price comparisons
-- Reasoning behind recommendations
-- Confidence scores
+### Layer 3: Agency
+Specialized agents coordinating research, validation, risk management, and execution.
 
 ---
 
-# System Architecture
+## Final Architecture
 
-## User Layer
-
-Handles:
-
-- User queries
-- Preferences
-- Budget constraints
-- Historical interactions
-- Saved recommendations
-
----
-
-## Orchestrator Agent
-
-The central controller responsible for:
-
-- Task decomposition
-- Agent coordination
-- Workflow management
-- Conflict resolution
-- Final recommendation synthesis
+Market Data
+↓
+Researcher Layer (ML/LSTM Signals)
+↓
+Validator Layer (RL + Strategy Selection)
+↓
+Risk Manager
+↓
+Execution Agent
+↓
+Monitoring & Logging
 
 ---
 
-## Research Agent
+## Core Components
 
+### Researcher Agent
 Responsible for:
+- Market scanning
+- Candidate selection
+- Signal generation
+- Forecasting
 
-- Product discovery
-- Feature extraction
-- Specification gathering
-- Market research
+Potential models:
+- LSTM
+- GRU
+- Transformers
+- Ensemble models
 
-Outputs:
-
-- Product candidates
-- Technical specifications
-- Vendor information
-
----
-
-## Review Analysis Agent
-
+### Validator Agent
 Responsible for:
+- Opportunity validation
+- Strategy selection
+- Confidence scoring
 
-- Review aggregation
-- Sentiment analysis
-- Complaint extraction
-- Strength identification
+Potential models:
+- PPO
+- DQN
+- Rule-based filters
 
-Outputs:
-
-- User sentiment
-- Common issues
-- Reliability insights
-
----
-
-## Comparison Agent
-
+### Risk Manager
 Responsible for:
+- Position sizing
+- Exposure control
+- Stop losses
+- Drawdown limits
 
-- Feature comparison
-- Benchmark evaluation
-- Tradeoff analysis
-
-Outputs:
-
-- Ranking tables
-- Product scorecards
-
----
-
-## Pricing Agent
-
+### Execution Agent
 Responsible for:
-
-- Price tracking
-- Discount discovery
-- Historical pricing
-
-Outputs:
-
-- Best purchase timing
-- Price alerts
-- Store recommendations
+- Exchange interaction
+- Order placement
+- API communication
+- Audit logging
 
 ---
 
-## Personalization Agent
+## Development Philosophy
 
-Responsible for:
+Build in stages:
 
-- Understanding user preferences
-- Building user profiles
-- Learning purchase patterns
+1. Infrastructure First
+2. Baseline Strategies
+3. ML Integration
+4. RL Integration
+5. Agentic Layer
+6. Deployment
+7. Research & Optimization
 
-Outputs:
-
-- Personalized rankings
-- Preference-adjusted recommendations
-
----
-
-## Memory Layer
-
-Stores:
-
-- User preferences
-- Past conversations
-- Previous purchases
-- Product interactions
-
-Enables long-term personalization.
+Complexity must always be justified by measurable improvements.
 
 ---
 
-## Retrieval Layer
+## Success Metrics
 
-Provides:
+Performance:
+- Sharpe Ratio
+- Profit Factor
+- Max Drawdown
+- Win Rate
 
-- Product databases
-- Review databases
-- Documentation
-- Knowledge sources
-
-Supports RAG-based retrieval.
-
----
-
-## Recommendation Engine
-
-Combines outputs from all agents into:
-
-- Final rankings
-- Confidence scores
-- Explainable recommendations
+Engineering:
+- Reliability
+- Reproducibility
+- Modularity
+- Observability
 
 ---
 
-# Example Workflow
+## Technology Stack
 
-User Query:
+### Data
+- Pandas
+- NumPy
 
-> "Best wireless headphones for travel under ₹15,000"
+### Machine Learning
+- PyTorch
 
-Workflow:
+### Reinforcement Learning
+- Stable-Baselines3
+- Gymnasium
 
-1. Query parsed
-2. Research Agent gathers candidates
-3. Review Agent analyzes reviews
-4. Pricing Agent checks current prices
-5. Comparison Agent scores products
-6. Personalization Agent adjusts ranking
-7. Orchestrator generates final report
-
-Output:
-
-- Best overall choice
-- Budget choice
-- Premium choice
-- Pros/Cons
-- Buying recommendation
-
----
-
-# Tech Stack
-
-## AI
-
-- Python
-- LangGraph
-- LangChain
-- OpenAI APIs
-- Local LLMs (future)
-
-## Backend
-
-- FastAPI
+### Storage
+- SQLite
 - PostgreSQL
-- Redis
 
-## Vector Database
-
-- Qdrant
-- Pinecone (optional)
-
-## Frontend
-
-- Next.js
-- TypeScript
-- TailwindCSS
-
-## Deployment
-
+### Deployment
 - Docker
-- Linux VM
-- NVIDIA GPU server
+- Ubuntu
+- Cloud VM
+
+### Monitoring
+- Logging
+- Telegram Alerts
+- Dashboards
 
 ---
 
-# Long-Term Vision
+## Project Status
 
-Create a fully autonomous shopping and commerce assistant capable of:
-
-- End-to-end product research
-- Personalized recommendations
-- Purchase planning
-- Price monitoring
-- Autonomous buying (future)
-- Cross-platform commerce intelligence
-
-Ultimately functioning as an AI shopping analyst available 24/7.
+Current Phase:
+Phase 1 — Infrastructure & Backtesting Foundation
